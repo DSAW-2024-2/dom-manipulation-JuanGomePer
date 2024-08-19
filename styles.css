@@ -1,0 +1,61 @@
+html, body {
+    height: 100%;
+    color: black;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100dvh;
+
+    & div{
+        display: flex;
+        height: 40dvh;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10%;
+        margin: 1dvh;
+    }
+
+    & #btn-atras{
+        background-color: aqua;
+        width: 20dvh;
+        &:hover{
+            background-color: gray;
+            color: aqua;
+        }
+    }
+
+    & #foto{
+        background-color: blueviolet;
+        flex-grow: 3;
+        width: 50dvh;
+        height: 70dvh;
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit:fill;
+            border-radius: 2%;
+        }
+    }
+
+    & #btn-adelante{
+        background-color: brown;
+        width: 20dvh;
+        &:hover{
+            background-color: gray;
+        }
+    }
+}
+
+ #flecha:hover{
+    fill: chartreuse;
+    stroke: aqua;
+ }
