@@ -19,26 +19,12 @@ html, body {
 
     & div{
         display: flex;
-        height: 40dvh;
         justify-content: center;
         align-items: center;
-        border-radius: 10%;
         margin: 1dvh;
-        border-radius:20% 
     }
-
-    & #btn-atras{
-        background-color: aqua;
-        width: 20dvh;
-        &:hover{
-            background-color: gray;
-        }
-    }
-
     & #foto{
-        background-color: blueviolet;
-        flex-grow: 3;
-        width: 70dvh;
+        width: 150dvh;
         height: 70dvh;
         & img{
             width: 100%;
@@ -47,16 +33,25 @@ html, body {
             border-radius: 2%;
         }
     }
-
-    & #btn-adelante{
-        background-color: rgb(187, 92, 92);
-        &:hover{
-            background-color: rgb(223, 169, 169);
-        }
-    }
 }
 
- #flecha:hover{
-    fill: chartreuse;
-    stroke: aqua;
- }
+#boton-atras, #boton-adelante {
+    cursor: pointer;
+    transition: transform 0.2s;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+  
+  #boton-atras:hover, #boton-adelante:hover {
+    transform: scale(1.25);
+  }
+  
+  #boton-atras:active, #boton-adelante:active {
+    transform: scale(1);
+  }
+  
+  .icon {
+    stroke: #93c5fd;
+    stroke-width: 1.5;
+  }
