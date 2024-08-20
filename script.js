@@ -7,7 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function mostrarImagen(indice) {
         imagenes.forEach((img, i) => {
-            img.style.display = i === indice ? 'block' : 'none';
+            img.classList.remove('active');
+            if (i === indice) {
+                img.classList.add('active');
+            }
         });
         actualizarBotones();
     }
@@ -34,6 +37,5 @@ document.addEventListener('DOMContentLoaded', () => {
     botonAdelante.addEventListener('click', avanzarImagen);
     botonAtras.addEventListener('click', retrocederImagen);
 
-    // Mostrar la primera imagen al cargar la página
     mostrarImagen(indiceActual);
 });
