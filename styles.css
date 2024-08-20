@@ -9,11 +9,13 @@ html, body {
     box-sizing: border-box;
 }
 
-#container{
+#contenedor{
     display: flex;
     justify-content:center;
     align-items: center;
     height: 100dvh;
+    background-color: #212121;
+    
 
     & div{
         display: flex;
@@ -22,6 +24,7 @@ html, body {
         align-items: center;
         border-radius: 10%;
         margin: 1dvh;
+        border-radius:20% 
     }
 
     & #btn-atras{
@@ -29,14 +32,13 @@ html, body {
         width: 20dvh;
         &:hover{
             background-color: gray;
-            color: aqua;
         }
     }
 
     & #foto{
         background-color: blueviolet;
         flex-grow: 3;
-        width: 50dvh;
+        width: 70dvh;
         height: 70dvh;
         & img{
             width: 100%;
@@ -47,10 +49,9 @@ html, body {
     }
 
     & #btn-adelante{
-        background-color: brown;
-        width: 20dvh;
+        background-color: rgb(187, 92, 92);
         &:hover{
-            background-color: gray;
+            background-color: rgb(223, 169, 169);
         }
     }
 }
